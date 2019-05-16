@@ -1,0 +1,174 @@
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ddd; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: orange; 
+  color: #000;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+    html {
+
+      background: url('../bg.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+
+
+    }
+	
+  @font-face {
+
+      font-family: 'Archivo';
+
+      src: url('../ArchivoNarrow-Regular.eot');
+
+      /* IE9 Compat Modes */
+
+      src: url('../ArchivoNarrow-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+
+        url('../ArchivoNarrow-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+
+        url('../ArchivoNarrow-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+
+        url('../ArchivoNarrow-Regular.ttf') format('truetype');
+
+      /* Safari, Android, iOS */
+
+    }
+	
+	
+.header {
+	width: 1200px;
+	height: 600px;
+	margin: 40px auto 0px;
+	background: #000;
+	text-align: center;
+	border: 1px solid #666;
+	border-radius: 8px 8px 0px 0px;
+	color: #fff;
+	height: 20px;
+	font-size: 20px;
+    line-height: 20px;
+}
+.wrapper {
+		width: 298px;
+		height: 600px;
+		margin: 0px auto;
+		border: 1px solid #333;
+		overflow-y: scroll;
+		background: #fff;
+		color: #000;
+		font-family: 'Archivo';
+}
+.wrapper:after {
+
+		content: "";
+		display: block;
+		clear: both;
+
+}
+
+.words {
+		width: 268px;
+		padding-top: 10px;
+		float: left;
+}
+
+.word {
+		width: 268px;
+		float: left;
+		padding-left: 10px;
+		
+}
+
+#word_list {
+	
+		max-height:  600px;
+		overflow-y: scroll;
+		color: orange;
+}
+
+.wrapper li {
+		list-style-type: none;
+		line-height: 1.4em;
+		color: orange;
+		
+		
+}
+
+.wrapper li:hover {
+	
+	cursor: pointer;
+	color: #000;
+}
+
+.wrapper ul {
+	margin-left: -10px;
+		
+}
+		
+.wrapper h3 {
+	color: orange;
+}
+
+#search {
+		margin-left: 10px;
+		width: 100px;
+		padding: 5px;
+		height: 13px;
+}
+
+button {
+		height: 22px;
+		background: lawngreen;
+		color: white;
+		border: none;
+		border-radius: 4px;
+}
+
+
+	
+	

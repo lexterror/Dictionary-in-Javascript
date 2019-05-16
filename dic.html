@@ -1,0 +1,44 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta charset='utf-8' />
+	<title>Dictionaries</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body> 
+
+<div class="wrapper">
+	<div class="words">
+<script src="autocomplete.js"></script>
+<script src="dictionary.js"></script>
+<script src="jquery.min.js"></script>
+<script src="lewis.js"></script>
+
+<form autocomplete="off">
+<div class="autocomplete">
+		<input type="text" id="search" placeholder="search...">
+</div>
+<script>
+autocomplete(document.getElementById("search"), dictionary);
+</script>		
+</form>	
+		<button onclick="search()" style="float:right;">Go</button>
+
+	</div>
+	
+	
+	<div class="word">
+		<h3 id="word_text"></h3>
+		<p id="definition"></p>
+		<hr>
+		<h3>Related Words:</h3>
+		<li id="related"></li>
+		
+	</div>
+</div>
+</body>
+
+</html>
