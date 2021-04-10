@@ -33,6 +33,10 @@ input[type=submit] {
   cursor: pointer;
   background-color: #ddd; 
   border-bottom: 1px solid #d4d4d4; 
+  width: 100px;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
 }
 .autocomplete-items div:hover {
   /*when hovering an item:*/
